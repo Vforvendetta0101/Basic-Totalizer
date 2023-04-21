@@ -20,7 +20,7 @@ symbol_value= {
     "B": 40,
     "C": 25,
     "D": 15,
-    "$": 1000
+    "$": 100
 }
 
 def check_winnings(columns,lines,bet,values):
@@ -101,7 +101,7 @@ def get_bet():
             if MIN_BET <= amount <= MAX_BET:
                 break
             else:
-                print(f"Amount mus be between ${MIN_BET} - ${MAX_BET}.")
+                print(f"Amount must be between ${MIN_BET} - ${MAX_BET}.")
         else: 
             print("Please enter a number.")
     return amount
@@ -116,7 +116,7 @@ def spin(balance):
             print(f"You do not have enough to bet that amount, Your current balance is ${balance}")
         else: 
             break
-    print(f"You are betting ${bet} on {lines} lines. Total net is equal to: ${total_bet}")
+    print(f"You are betting ${bet} on {lines} lines. Total bet is equal to: ${total_bet}")
 
     slots =get_slot_machine_spin(ROWS,COLS,symbol_count)
     print_slot_machine(slots)
