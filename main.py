@@ -1,7 +1,7 @@
 import random
 
 MAX_LINES = 3
-MAX_BET = 100
+MAX_BET = 100000
 MIN_BET = 1
 
 ROWS = 3
@@ -13,14 +13,14 @@ symbol_count= {
     "B": 4,
     "C": 6,
     "D": 8,
-    "$": 20
+    "$": 15
 }
 symbol_value= {
     "A": 50,
     "B": 40,
     "C": 25,
     "D": 15,
-    "$": 100
+    "$": 1000
 }
 
 def check_winnings(columns,lines,bet,values):
