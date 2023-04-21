@@ -16,11 +16,11 @@ symbol_count= {
     "$": 20
 }
 symbol_value= {
-    "A": 6,
-    "B": 5,
-    "C": 4,
-    "D": 3,
-    "$": 1
+    "A": 50,
+    "B": 40,
+    "C": 25,
+    "D": 15,
+    "$": 100
 }
 
 def check_winnings(columns,lines,bet,values):
